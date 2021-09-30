@@ -5,7 +5,7 @@ struct Board {
 }
 impl Board {
     fn add_percent(&mut self, percent: u8) {
-        self.price_after = (self.price_before * (percent as f64*0.01))+self.price_before;
+        self.price_after = (self.price_before * (percent as f64 * 0.01)) + self.price_before;
     }
 }
 fn main() {
@@ -21,4 +21,13 @@ fn main() {
     }
     println!("Stara cena: {}", obnizka.price_before);
     println!("Nowa cena: {}", obnizka.price_after);
+}
+
+fn input() -> String {
+    let mut input = String::new();
+    match std::io::stdin().read_line(&mut input) {
+        Ok(_) => {}
+        Err(_) => {}
+    }
+    input.trim().to_string()
 }
