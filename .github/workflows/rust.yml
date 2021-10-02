@@ -7,7 +7,7 @@ jobs:
     name: Fix
     runs-on: ubuntu-latest
     steps:
-      - run: cargo fix--edition
+      - run: cargo fix --edition
       
   check:
     name: Check
