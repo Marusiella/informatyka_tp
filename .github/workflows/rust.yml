@@ -3,6 +3,12 @@ on: [push, pull_request]
 name: Quickstart
 
 jobs:
+  fix:
+    name: Fix
+    runs-on: ubuntu-latest
+    steps:
+      - run: cargo fix--edition
+      
   check:
     name: Check
     runs-on: ubuntu-latest
