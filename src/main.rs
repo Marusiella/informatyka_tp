@@ -36,7 +36,7 @@ fn input(print: &str, typ:bool) -> f64 {
         Err(_) => {
             println!("podałeś nieprawidłąwą numer \"{}\" zostanie użyta domyślna wartość", input.trim());
             if typ {
-                5.
+                13.
             } else {
                 1000.
             }
