@@ -9,6 +9,7 @@ impl Board {
     }
 }
 fn main() {
+    // użyć jeśli wpisywanie nie działa
     // let mut obnizka = Board {
     //     price_before: 10.0,
     //     price_after: 0.,
